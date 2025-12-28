@@ -25,14 +25,16 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="top">
+    
+    </div>
     <div class="container">
       <div class="top-section">
         <div class="panel student-info">
           <div class="panel-header">STUDENT INFO</div>
           <div class="avatar">
             <div class="avatar-inner">
-              <img src="kristine.jpg" alt="Kristine Castres" />
+              <img src="images/kristine.jpg" alt="Kristine Castres" />
             </div>
           </div>
           <div class="info-content">
@@ -288,13 +290,153 @@
         </div>
       </div>
 
-      <div class="panel projects-section">
+      <div class="panel projects-section" id="projects">
         <div class="panel-header">PROJECTS</div>
         <div class="projects-grid" id="projects-grid">
           <!-- Project cards will be dynamically inserted here -->
         </div>
       </div>
+
+      <!-- Contact Form Section -->
+      <div class="panel contact-section" id="contact">
+        <div class="panel-header">CONTACT ME</div>
+        <div class="contact-content">
+          <p class="contact-intro">
+            Have a project in mind or want to connect? Send me a message!
+          </p>
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter your email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="What is this about?"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Tell me about your project or inquiry..."
+              ></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div class="form-status" id="formStatus"></div>
+            </div>
+          </form>
+          <div class="alternative-contact">
+            <h3>Or reach me directly:</h3>
+            <div class="direct-contact-info">
+              <div class="direct-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>kristinecastres10@gmail.com</span>
+              </div>
+              <div class="direct-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>IT Student & Aspiring Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-avatar">
+            <img src="images/kristine.jpg" alt="Kristine Castres" />
+          </div>
+          <div class="footer-name">KRISTINE CASTRES</div>
+          <div class="footer-tagline">IT Student & Aspiring Developer</div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#top">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <div class="footer-social">
+              <a href="#" class="footer-social-icon" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="footer-social-icon" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="footer-social-icon" title="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Skills</h4>
+            <div class="footer-skills">
+              <span class="skill-tag">Web Dev</span>
+              <span class="skill-tag">Game Dev</span>
+              <span class="skill-tag">UI/UX</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Unity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="copyright">
+            <i class="far fa-copyright"></i> 2025 Kristine Castres. All rights
+            reserved.
+          </div>
+          <div class="footer-message">
+            Built with <i class="fas fa-heart"></i> and
+            <i class="fas fa-code"></i>
+            by Kristine
+          </div>
+        </div>
+      </div>
+    </footer>
+    
     <!-- MODULE SCRIPTS -->
     <script type="module" src="scripts.js"></script>
     <script type="module" src="firebase.js"></script>
