@@ -119,7 +119,23 @@ body {
   display: flex;
   gap: 5px;
   margin-bottom: 10px;
-  
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    grid-template-columns: 1fr;
+  }
+
+  .student-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px 30px 20px;
+  }
+
+  .student-info .social-icons {
+    justify-content: center;
+  }
 }
 
 .social-icon {
